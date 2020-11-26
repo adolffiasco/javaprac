@@ -1,0 +1,38 @@
+class BankAccount{
+    String Name;
+    int AccountId;
+    double Balance;
+
+
+    void deposit(double ammount){
+        Balance= Balance+ammount;
+    }
+    void withdraw(double amount){
+        Balance=Balance-amount;
+
+    }
+    double getBalance(){
+        return Balance;
+    }
+    void Display(){
+        System.out.println("Acc Name: "+Name+", Account ID: "+AccountId+", Account Balance: "+format.format(Balance));
+    }
+}
+
+        BankAccount b1=new BankAccount();
+        BankAccount b2=new BankAccount();
+        b1.Name="Rokibul Hasan";
+        b1.AccountId=2476;
+        b1.Balance=98453.34;
+        b2.Name="Adolf Fiasco";
+        b2.AccountId=2567;
+        b2.Balance=103853.35;
+        b1.deposit(12000);
+        b2.withdraw(20034.43);
+        System.out.println();
+        b1.Display();
+        b2.Display();
+
+    }
+
+}
